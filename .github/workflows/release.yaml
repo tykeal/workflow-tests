@@ -17,3 +17,5 @@ jobs:
       - name: Create Release Notes
         run: >-
           gh release create ${{ steps.tag.outputs.tag }}  --generate-notes
+        env:
+          GH_TOKEN: ${{ github.token }}

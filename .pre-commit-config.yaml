@@ -31,7 +31,7 @@ repos:
       - id: gitlint
 
   - repo: https://github.com/adrienverge/yamllint.git
-    rev: b05e028c5881819161d11cb543fd96a30c06cceb  # frozen: v1.32.0
+    rev: 8713140e99914c0cb6e07364daedfb140847c3c5  # frozen: v1.33.0
     hooks:
       - id: yamllint
         types: [yaml]
@@ -55,12 +55,12 @@ repos:
   #     ]
 
   - repo: https://github.com/PyCQA/isort
-    rev: dbf82f2dd09ae41d9355bcd7ab69187a19e6bf2f  # frozen: 5.12.0
+    rev: c235f5e450b4b84e58d114ed4c589cbf454175a3  # frozen: 5.13.2
     hooks:
       - id: isort
 
   - repo: https://github.com/psf/black
-    rev: 744d23b34800c06e10272149b70752396e90eeb8  # frozen: 23.10.1
+    rev: ec91a2be3c44d88e1a3960a4937ad6ed3b63464e  # frozen: 23.12.1
     hooks:
       - id: black
         language_version: python3
@@ -73,7 +73,7 @@ repos:
   #     additional_dependencies: [black]
 
   - repo: https://github.com/PyCQA/flake8
-    rev: 10f4af6dbcf93456ba7df762278ae61ba3120dc6  # frozen: 6.1.0
+    rev: 7d37d9032d0d161634be4554273c30efd4dea0b3  # frozen: 7.0.0
     hooks:
       - id: flake8
         args: ["--max-line-length=120"]
@@ -86,7 +86,7 @@ repos:
   #   - id: codespell
 
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: 26de8945da573fe5d33a7bfb8bebfb57f7155020  # frozen: v1.6.1
+    rev: 8cd2d4056637e242709fe09f15a36f0b4b682bda  # frozen: v1.8.0
     hooks:
       - id: mypy
 
